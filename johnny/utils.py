@@ -63,10 +63,10 @@ johnny_task_wrapper = celery_task_wrapper
 
 
 def get_cache(backend, **kwargs):
-     """
-     Compatibilty wrapper for getting Django's cache backend instance
-     """
-     try:
+    """
+    Compatibilty wrapper for getting Django's cache backend instance
+    """
+    try:
         from django.core.cache import _create_cache
     except ImportError:
         # Django < 1.7
